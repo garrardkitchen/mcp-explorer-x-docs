@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on MCP Explorer</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/</link><description>Recent content in Reference on MCP Explorer</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Keyboard Shortcuts</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/keyboard-shortcuts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/keyboard-shortcuts/</guid><description>&lt;h2 id="command-palette"&gt;Command Palette &lt;a href="#command-palette" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Press &lt;code&gt;⌘K&lt;/code&gt; (macOS) or &lt;code&gt;Ctrl+K&lt;/code&gt; (Windows/Linux) from anywhere in the app to open the command palette.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+ 
+
+
+
+ 
+
+&lt;em&gt;The command palette provides instant keyboard-first navigation to any page or action. Type to fuzzy-search.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Type to fuzzy-search and press &lt;code&gt;Enter&lt;/code&gt; to navigate. Press &lt;code&gt;Esc&lt;/code&gt; to close.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="global-shortcuts"&gt;Global Shortcuts &lt;a href="#global-shortcuts" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Shortcut&lt;/th&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;⌘K&lt;/code&gt; / &lt;code&gt;Ctrl+K&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Open command palette&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;Esc&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Close dialogs / command palette&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="chat-shortcuts"&gt;Chat Shortcuts &lt;a href="#chat-shortcuts" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Shortcut&lt;/th&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;Enter&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Send message&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;Shift+Enter&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Insert newline&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;/&lt;/code&gt; (at start of input)&lt;/td&gt;
+ &lt;td&gt;Open slash commands&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;Ctrl+Enter&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Send (alternate)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="slash-commands-chat"&gt;Slash Commands (Chat) &lt;a href="#slash-commands-chat" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Type &lt;code&gt;/&lt;/code&gt; in the chat input to access:&lt;/p&gt;</description></item><item><title>Architecture</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/architecture/</guid><description>&lt;h2 id="architecture-overview"&gt;Architecture Overview &lt;a href="#architecture-overview" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Explorer follows a clean architecture pattern with a Vue 3 SPA frontend and an ASP.NET Core backend.&lt;/p&gt;
+&lt;pre class="mermaid"&gt;flowchart TB
+ subgraph BROWSER[&amp;#34;🌐 Browser&amp;#34;]
+ SPA[&amp;#34;⚡ Vue 3 · Vite · PrimeVue 4\nSingle-Page Application&amp;#34;]
+ end
+
+ subgraph SINGLE[&amp;#34;🐳 Single Container (docker run)&amp;#34;]
+ GW[&amp;#34;🔀 YARP Gateway :8080\nStatic SPA host &amp;#43; /api/** proxy&amp;#34;]
+ API[&amp;#34;⚙️ ASP.NET Core API :5000&amp;#34;]
+ GW --&amp;gt;|reverse proxy| API
+ end
+
+ subgraph DATA[&amp;#34;💾 Persistent Data&amp;#34;]
+ FILE[&amp;#34;/app/data/data.json\nConnections · Models · Workflows\nSettings · Chat History&amp;#34;]
+ end
+
+ subgraph MCP[&amp;#34;🔌 MCP Servers&amp;#34;]
+ S1[&amp;#34;Server A (stdio)&amp;#34;]
+ S2[&amp;#34;Server B (SSE)&amp;#34;]
+ S3[&amp;#34;Server C (HTTP)&amp;#34;]
+ end
+
+ BROWSER --&amp;gt;|HTTP/SSE| GW
+ API --&amp;gt;|read/write| FILE
+ API --&amp;gt;|MCP protocol| S1
+ API --&amp;gt;|MCP protocol| S2
+ API --&amp;gt;|MCP protocol| S3
+&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id="deployment-modes"&gt;Deployment Modes &lt;a href="#deployment-modes" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="single-container"&gt;Single Container &lt;a href="#single-container" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The default deployment — everything in one image.&lt;/p&gt;</description></item><item><title>Environment Variables</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/environment-variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/environment-variables/</guid><description>&lt;h2 id="overview"&gt;Overview &lt;a href="#overview" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Explorer is configured entirely via environment variables — there are no required config files to edit. Copy &lt;code&gt;.env.example&lt;/code&gt; to &lt;code&gt;.env&lt;/code&gt;, fill in your values, and pass it to Docker or Docker Compose.&lt;/p&gt;
+
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ &lt;div class="prism-codeblock "&gt;
+ &lt;pre id="1939026" class="language-bash "&gt;
+ &lt;code&gt;# Docker Compose (reads .env automatically)
+cp .env.example .env
+docker compose up -d
+
+# docker run (pass vars individually)
+docker run -p 8090:8080 \
+ -e MCP_CLIENT_NAME=my-app \
+ -e MCP_DATA_PATH=/data \
+ -v /path/to/data:/data \
+ ghcr.io/your-org/mcp-explorer:latest&lt;/code&gt;
+ &lt;/pre&gt;
+ &lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;info:&lt;/strong&gt; In Docker Compose, variables in &lt;code&gt;.env&lt;/code&gt; are interpolated into &lt;code&gt;docker-compose.yml&lt;/code&gt; automatically. Variables prefixed &lt;code&gt;VITE_&lt;/code&gt; are &lt;strong&gt;build-time only&lt;/strong&gt; — they are baked into the static JS bundle and cannot be changed at runtime.&lt;/p&gt;</description></item></channel></rss>

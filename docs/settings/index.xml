@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Settings on MCP Explorer</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/</link><description>Recent content in Settings on MCP Explorer</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/index.xml" rel="self" type="application/rss+xml"/><item><title>App Settings</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/app-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/app-settings/</guid><description>&lt;h2 id="overview"&gt;Overview &lt;a href="#overview" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The Settings page provides global configuration for MCP Explorer — themes, sensitive data protection rules, and data import/export.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+ 
+
+
+
+ 
+
+&lt;em&gt;The Settings page groups configuration into cards: Theme, Security, and Data Management.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="themes"&gt;Themes &lt;a href="#themes" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Explorer ships with &lt;strong&gt;10 built-in themes&lt;/strong&gt;. Select any theme — your choice is persisted automatically.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Theme&lt;/th&gt;
+ &lt;th&gt;Style&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Command Dark&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Dark, high-contrast terminal feel&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Command Light&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Clean light counterpart&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Nord&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Arctic blue palette&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Dracula&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Classic dark purple&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Catppuccin Mocha&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Warm dark with pastel accents&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Solarized Light&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Warm off-white, reduced glare&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;GitHub Dark&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Familiar dark mode&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;GitHub Light&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Classic GitHub light&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Material Dark&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Google Material dark&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Material Light&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Google Material light&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="sensitive-data-protection"&gt;Sensitive Data Protection &lt;a href="#sensitive-data-protection" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Explorer detects and masks sensitive values using a combination of heuristics and configurable regex patterns.&lt;/p&gt;</description></item><item><title>Data Guard</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/data-guard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/data-guard/</guid><description>&lt;h2 id="overview"&gt;Overview &lt;a href="#overview" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Data Guard&lt;/strong&gt; is MCP Explorer&amp;rsquo;s built-in sensitive data protection layer. It intercepts all MCP communications — tool inputs, tool outputs, prompt content, and chat messages — and automatically detects, masks, and protects sensitive values before they appear in the UI or are stored.&lt;/p&gt;
+&lt;p&gt;Detection uses three complementary engines that run in combination:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Engine&lt;/th&gt;
+ &lt;th&gt;Always on?&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Regex patterns&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;✅ Yes&lt;/td&gt;
+ &lt;td&gt;Detects common secret formats: API keys, bearer tokens, passwords, connection strings&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Heuristic scanning&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;✅ Yes&lt;/td&gt;
+ &lt;td&gt;Flags high-entropy alphanumeric tokens that look like secrets&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;AI detection&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;⚙️ Optional&lt;/td&gt;
+ &lt;td&gt;Uses an LLM to analyse values in context — catches secrets that evade pattern matching&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Detected values are masked as &lt;code&gt;●●●●●●●●&lt;/code&gt; in the UI with a reveal toggle, and are encrypted at rest.&lt;/p&gt;</description></item></channel></rss>

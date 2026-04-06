@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on MCP Explorer</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/</link><description>Recent content in Getting Started on MCP Explorer</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Start</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/quickstart/</guid><description>&lt;h2 id="prerequisites"&gt;Prerequisites &lt;a href="#prerequisites" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/get-docker/" rel="external" target="_blank"&gt;Docker&lt;svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/&gt;&lt;/svg&gt;&lt;/a&gt; 20.10+ installed and running&lt;/li&gt;
+&lt;li&gt;A terminal / command prompt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="option-1--single-container-docker-run"&gt;Option 1 — Single Container (&lt;code&gt;docker run&lt;/code&gt;) &lt;a href="#option-1--single-container-docker-run" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The fastest way to get started. One command, one container.&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/configuration/</guid><description>&lt;h2 id="environment-variables"&gt;Environment Variables &lt;a href="#environment-variables" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Explorer is configured via environment variables. When using Docker Compose, place these in a &lt;code&gt;.env&lt;/code&gt; file alongside &lt;code&gt;docker-compose.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Variable&lt;/th&gt;
+ &lt;th&gt;Default&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;MCP_CLIENT_NAME&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;mcp-explorer&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Name sent in the &lt;code&gt;User-Agent&lt;/code&gt; header and MCP &lt;code&gt;ClientInfo&lt;/code&gt; when connecting to MCP servers&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;ASPNETCORE_ENVIRONMENT&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;Production&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Set to &lt;code&gt;Development&lt;/code&gt; for verbose logging&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="example-env"&gt;Example &lt;code&gt;.env&lt;/code&gt; &lt;a href="#example-env" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ &lt;div class="prism-codeblock "&gt;
+ &lt;pre id="1aab518" class="language-bash "&gt;
+ &lt;code&gt;# .env
+MCP_CLIENT_NAME=acme-mcp-explorer&lt;/code&gt;
+ &lt;/pre&gt;
+ &lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id="persistent-data"&gt;Persistent Data &lt;a href="#persistent-data" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MCP Explorer stores all state — connections, models, workflows, chat history, and settings — in a single JSON file at &lt;code&gt;/app/data/data.json&lt;/code&gt; inside the container.&lt;/p&gt;</description></item></channel></rss>

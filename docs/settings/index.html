@@ -1,0 +1,632 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><title>Settings | Documentation</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="App-wide settings including themes, security, and data management."><meta name=keywords content="Documentation,Hugo,Hugo Theme,Bootstrap"><meta name=author content="Colin Wilson - Lotus Labs"><meta name=email content="support@aigis.uk"><meta name=website content="https://lotusdocs.dev"><meta name=Version content="v0.1.0"><link rel=icon href=https://mcp-explorer-x-docs.garrardkitchen.com/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://mcp-explorer-x-docs.garrardkitchen.com/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://mcp-explorer-x-docs.garrardkitchen.com/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://mcp-explorer-x-docs.garrardkitchen.com/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://mcp-explorer-x-docs.garrardkitchen.com/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://mcp-explorer-x-docs.garrardkitchen.com/site.webmanifest><meta property="og:title" content="Settings"><meta property="og:description" content="App-wide settings including themes, security, and data management."><meta property="og:type" content="website"><meta property="og:url" content="https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/"><meta property="og:image" content="https://mcp-explorer-x-docs.garrardkitchen.com/opengraph/card-base-2_hu_2698e2cc3f013fd4.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://mcp-explorer-x-docs.garrardkitchen.com/opengraph/card-base-2_hu_2698e2cc3f013fd4.png"><meta name=twitter:title content="Settings"><meta name=twitter:description content="App-wide settings including themes, security, and data management."><link rel=alternate type=application/atom+xml title="Atom feed for MCP Explorer" href=/index.xml><script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><script type=text/javascript src=https://mcp-explorer-x-docs.garrardkitchen.com/docs/js/flexsearch.bundle.min.f5159d5a2151ffbb653996ec17eaff7da4e04c286bd879fc41839d36a5586f3f20eaead0b6089de48f9adc669cdee771.js integrity=sha384-9RWdWiFR/7tlOZbsF+r/faTgTChr2Hn8QYOdNqVYbz8g6urQtgid5I+a3Gac3udx crossorigin=anonymous></script><link rel=preconnect href=https://fonts.gstatic.com/><link rel=preconnect href=https://fonts.gstatic.com/ crossorigin><link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|JetBrains+Mono:400,700&display=block" rel=stylesheet><link rel=stylesheet href=/docs/scss/style.min.5b3937c5bc437fb231e93eb1428b0995f2b57f1f3510302d048e9803c07e46354bfe64d3a5a730662e405adc1c7776d6.css integrity=sha384-Wzk3xbxDf7Ix6T6xQosJlfK1fx81EDAtBI6YA8B+RjVL/mTTpacwZi5AWtwcd3bW crossorigin=anonymous><style>#topnav:not(.scroll):not(.nav-sticky) .navigation-menu>li>a{color:#6366f1!important}#topnav:not(.scroll):not(.nav-sticky) .navigation-menu>li:hover>a{color:#4f46e5!important}#topnav.scroll .navigation-menu>li>a,#topnav.nav-sticky .navigation-menu>li>a{color:#6366f1!important}#topnav.scroll .navigation-menu>li:hover>a,#topnav.scroll .navigation-menu>li.active>a,#topnav.nav-sticky .navigation-menu>li:hover>a,#topnav.nav-sticky .navigation-menu>li.active>a{color:#4f46e5!important}.main-content img{cursor:zoom-in}</style><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css><script src=https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){var e='header, nav, footer, #topnav, .navbar, .sidebar, .toc, .breadcrumb, [class*="logo"], [class*="icon"], [class*="avatar"]';document.querySelectorAll("body img").forEach(function(t){if(t.closest("a"))return;if(t.closest(e))return;if(t.classList.contains("no-lightbox"))return;var n,s=t.getAttribute("src")||"";if(!s||s.startsWith("data:"))return;if(t.offsetWidth>0&&t.offsetWidth<80)return;n=document.createElement("a"),n.href=t.src,n.classList.add("glightbox"),t.alt&&n.setAttribute("data-description",t.alt),t.parentNode.insertBefore(n,t),n.appendChild(t)}),GLightbox({touchNavigation:!0,loop:!1,closeButton:!0,keyboardNavigation:!0,closeOnOutsideClick:!0})})</script></head><body><div class=content><div class="page-wrapper toggled"><nav id=sidebar class=sidebar-wrapper><div class=sidebar-brand><a href=/ aria-label=HomePage alt=HomePage><svg id="Layer_1" viewBox="0 0 250 250"><path d="m143 39.5c-18 0-18 18-18 18s0-18-18-18H22c-2.76.0-5 2.24-5 5v143c0 2.76 2.24 5 5 5h76c7.2.0 8.64 11.52 8.93 16.13.07 1.05.95 1.87 2 1.87h32.14c1.06.0 1.94-.82 2-1.87.29-4.61 1.73-16.13 8.93-16.13h76c2.76.0 5-2.24 5-5V44.5c0-2.76-2.24-5-5-5h-85zM206 163c0 1.38-1.12 2.5-2.5 2.5H143c-18 0-18 18-18 18s0-18-18-18H46.5c-1.38.0-2.5-1.12-2.5-2.5V69c0-1.38 1.12-2.5 2.5-2.5H98c7.2.0 8.64 11.52 8.93 16.13.07 1.05.95 1.87 2 1.87h32.14c1.06.0 1.94-.82 2-1.87.29-4.61 1.73-16.13 8.93-16.13h51.5c1.38.0 2.5 1.12 2.5 2.5v94z" style="fill:#06f"/></svg></a></div><div class=sidebar-content style="height:calc(100% - 131px)"><ul class=sidebar-menu><li class="sidebar-dropdown no-icon"><button class=btn>
+Getting Started</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/quickstart/>Quick Start</a></li><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/getting-started/configuration/>Configuration</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Connections</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/connections/managing-connections/>Managing Connections</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Tools</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/tools/browsing-tools/>Browsing & Invoking Tools</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Prompts</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/prompts/using-prompts/>Using Prompts</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Chat</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/chat/chat-overview/>Chat Overview</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Resource Templates</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/templates/using-templates/>Using Resource Templates</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Workflows</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/workflows/building-workflows/>Building Workflows</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Models</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/models/configuring-models/>Configuring Models</a></li></ul></div></li><li class="sidebar-dropdown no-icon current active"><button class=btn>
+Settings</button><div class="sidebar-submenu d-block"><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/app-settings/>App Settings</a></li><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/data-guard/>Data Guard</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Reference</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/keyboard-shortcuts/>Keyboard Shortcuts</a></li><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/architecture/>Architecture</a></li><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/reference/environment-variables/>Environment Variables</a></li></ul></div></li><li class="sidebar-dropdown no-icon"><button class=btn>
+Elicitations</button><div class=sidebar-submenu><ul><li class=no-icon><a class=sidebar-nested-link href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/elicitations/using-elicitations/>Using Elicitations</a></li></ul></div></li></ul></div><ul class="sidebar-footer list-unstyled mb-0"></ul></nav><main class="page-content bg-transparent"><div id=top-header class="top-header d-print-none"><div class="header-bar d-flex justify-content-between"><div class="d-flex align-items-center"><a href=/ class="logo-icon me-3" aria-label=HomePage alt=HomePage><div class=small><svg id="Layer_1" viewBox="0 0 250 250"><path d="m143 39.5c-18 0-18 18-18 18s0-18-18-18H22c-2.76.0-5 2.24-5 5v143c0 2.76 2.24 5 5 5h76c7.2.0 8.64 11.52 8.93 16.13.07 1.05.95 1.87 2 1.87h32.14c1.06.0 1.94-.82 2-1.87.29-4.61 1.73-16.13 8.93-16.13h76c2.76.0 5-2.24 5-5V44.5c0-2.76-2.24-5-5-5h-85zM206 163c0 1.38-1.12 2.5-2.5 2.5H143c-18 0-18 18-18 18s0-18-18-18H46.5c-1.38.0-2.5-1.12-2.5-2.5V69c0-1.38 1.12-2.5 2.5-2.5H98c7.2.0 8.64 11.52 8.93 16.13.07 1.05.95 1.87 2 1.87h32.14c1.06.0 1.94-.82 2-1.87.29-4.61 1.73-16.13 8.93-16.13h51.5c1.38.0 2.5 1.12 2.5 2.5v94z" style="fill:#06f"/></svg></div><div class=big><svg id="Layer_1" viewBox="0 0 250 250"><path d="m143 39.5c-18 0-18 18-18 18s0-18-18-18H22c-2.76.0-5 2.24-5 5v143c0 2.76 2.24 5 5 5h76c7.2.0 8.64 11.52 8.93 16.13.07 1.05.95 1.87 2 1.87h32.14c1.06.0 1.94-.82 2-1.87.29-4.61 1.73-16.13 8.93-16.13h76c2.76.0 5-2.24 5-5V44.5c0-2.76-2.24-5-5-5h-85zM206 163c0 1.38-1.12 2.5-2.5 2.5H143c-18 0-18 18-18 18s0-18-18-18H46.5c-1.38.0-2.5-1.12-2.5-2.5V69c0-1.38 1.12-2.5 2.5-2.5H98c7.2.0 8.64 11.52 8.93 16.13.07 1.05.95 1.87 2 1.87h32.14c1.06.0 1.94-.82 2-1.87.29-4.61 1.73-16.13 8.93-16.13h51.5c1.38.0 2.5 1.12 2.5 2.5v94z" style="fill:#06f"/></svg></div></a><button id=close-sidebar class="btn btn-icon btn-soft">
+<span class="material-icons size-20 menu-icon align-middle">menu</span>
+</button>
+<button id=flexsearch-button class="ms-3 btn btn-soft" data-bs-toggle=collapse data-bs-target=#FlexSearchCollapse aria-expanded=false aria-controls=FlexSearchCollapse>
+<span class="material-icons size-20 menu-icon align-middle">search</span>
+<span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block">Search</span><div class="d-none d-sm-block"><span class=flexsearch-button-keys><kbd class=flexsearch-button-cmd-key><svg width="44" height="15"><path d="M2.118 11.5A1.519 1.519.0 011 11.042 1.583 1.583.0 011 8.815a1.519 1.519.0 011.113-.458h.715V6.643h-.71A1.519 1.519.0 011 6.185 1.519 1.519.0 01.547 5.071 1.519 1.519.0 011 3.958 1.519 1.519.0 012.118 3.5a1.519 1.519.0 011.114.458A1.519 1.519.0 013.69 5.071v.715H5.4V5.071A1.564 1.564.0 016.976 3.5 1.564 1.564.0 018.547 5.071 1.564 1.564.0 016.976 6.643H6.261V8.357h.715a1.575 1.575.0 011.113 2.685 1.583 1.583.0 01-2.227.0A1.519 1.519.0 015.4 9.929V9.214H3.69v.715a1.519 1.519.0 01-.458 1.113A1.519 1.519.0 012.118 11.5zm0-.857a.714.714.0 00.715-.714V9.214H2.118a.715.715.0 100 1.429zm4.858.0a.715.715.0 100-1.429H6.261v.715a.714.714.0 00.715.714zM3.69 8.357H5.4V6.643H3.69zM2.118 5.786h.715V5.071a.714.714.0 00-.715-.714.715.715.0 00-.5 1.22A.686.686.0 002.118 5.786zm4.143.0h.715a.715.715.0 00.5-1.22.715.715.0 00-1.22.5z" fill="currentColor"/><path d="M12.4 11.475H11.344l3.879-7.95h1.056z" fill="currentColor"/><path d="M25.073 5.384l-.864.576a2.121 2.121.0 00-1.786-.923 2.207 2.207.0 00-2.266 2.326 2.206 2.206.0 002.266 2.325 2.1 2.1.0 001.782-.918l.84.617a3.108 3.108.0 01-2.622 1.293 3.217 3.217.0 01-3.349-3.317 3.217 3.217.0 013.349-3.317A3.046 3.046.0 0125.073 5.384z" fill="currentColor"/><path d="M30.993 5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172z" fill="currentColor"/><path d="M34.67 4.164c1.471.0 2.266.658 2.266 1.851.0 1.087-.832 1.809-2.134 1.855l2.107 2.691h-1.28L33.591 7.87H33.07v2.691H32.038v-6.4zm-1.6.969v1.8h1.572c.832.0 1.22-.3 1.22-.918s-.411-.882-1.22-.882z" fill="currentColor"/><path d="M42.883 10.561H38.31v-6.4h1.033V9.583h3.54z" fill="currentColor"/></svg>
+</kbd><kbd class=flexsearch-button-key><svg width="15" height="15"><path d="M5.926 12.279H4.41L9.073 2.721H10.59z" fill="currentColor"/></svg></kbd></span></div></button></div><div class="d-flex align-items-center"><ul class="list-unstyled mb-0"><li class="list-inline-item mb-0"><a href=https://github.com/your-username/mcp-explorer-x alt=github rel="noopener noreferrer" target=_blank><div class="btn btn-icon btn-default border-0"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg></div></a></li></ul><button id=mode class="btn btn-icon btn-default ms-2" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><title>Enable dark mode</title><path d="M24 42q-7.5.0-12.75-5.25T6 24t5.25-12.75T24 6q.4.0.85.025.45.025 1.15.075-1.8 1.6-2.8 3.95t-1 4.95q0 4.5 3.15 7.65Q28.5 25.8 33 25.8q2.6.0 4.95-.925T41.9 22.3q.05.6.075.975Q42 23.65 42 24q0 7.5-5.25 12.75T24 42zm0-3q5.45.0 9.5-3.375t5.05-7.925q-1.25.55-2.675.825Q34.45 28.8 33 28.8q-5.75.0-9.775-4.025T19.2 15q0-1.2.25-2.575t.9-3.125q-4.9 1.35-8.125 5.475Q9 18.9 9 24q0 6.25 4.375 10.625T24 39zm-.2-14.85z"/></svg>
+</span><span class=toggle-light><svg height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><title>Enable light mode</title><path d="M24 31q2.9.0 4.95-2.05T31 24t-2.05-4.95T24 17t-4.95 2.05T17 24t2.05 4.95T24 31zm0 3q-4.15.0-7.075-2.925T14 24t2.925-7.075T24 14t7.075 2.925T34 24t-2.925 7.075T24 34zM3.5 25.5q-.65.0-1.075-.425Q2 24.65 2 24t.425-1.075Q2.85 22.5 3.5 22.5h5q.65.0 1.075.425Q10 23.35 10 24t-.425 1.075T8.5 25.5zm36 0q-.65.0-1.075-.425Q38 24.65 38 24t.425-1.075T39.5 22.5h5q.65.0 1.075.425Q46 23.35 46 24t-.425 1.075-1.075.425zM24 10q-.65.0-1.075-.425Q22.5 9.15 22.5 8.5v-5q0-.65.425-1.075Q23.35 2 24 2t1.075.425T25.5 3.5v5q0 .65-.425 1.075Q24.65 10 24 10zm0 36q-.65.0-1.075-.425T22.5 44.5v-5q0-.65.425-1.075Q23.35 38 24 38t1.075.425.425 1.075v5q0 .65-.425 1.075Q24.65 46 24 46zM12 14.1l-2.85-2.8q-.45-.45-.425-1.075.025-.625.425-1.075.45-.45 1.075-.45t1.075.45L14.1 12q.4.45.4 1.05.0.6-.4 1-.4.45-1.025.45T12 14.1zm24.7 24.75L33.9 36q-.4-.45-.4-1.075t.45-1.025q.4-.45 1-.45t1.05.45l2.85 2.8q.45.45.425 1.075-.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45zM33.9 14.1q-.45-.45-.45-1.05.0-.6.45-1.05l2.8-2.85q.45-.45 1.075-.425.625.025 1.075.425.45.45.45 1.075t-.45 1.075L36 14.1q-.4.4-1.025.4t-1.075-.4zM9.15 38.85q-.45-.45-.45-1.075t.45-1.075L12 33.9q.45-.45 1.05-.45.6.0 1.05.45.45.45.45 1.05.0.6-.45 1.05l-2.8 2.85q-.45.45-1.075.425-.625-.025-1.075-.425zM24 24z"/></svg></span></button></div></div><div class=collapse id=FlexSearchCollapse><div class=flexsearch-container><div class=flexsearch-keymap><li><kbd class=flexsearch-button-cmd-key><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8m3-3-3 3-3-3"/></g></svg></kbd>
+<kbd class=flexsearch-button-cmd-key><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8m3 3-3-3-3 3"/></g></svg></kbd>
+<span class=flexsearch-key-label>to navigate</span></li><li><kbd class=flexsearch-button-cmd-key><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4m3 3-3-3 3-3"/></g></svg></kbd>
+<span class=flexsearch-key-label>to select</span></li><li><kbd class=flexsearch-button-cmd-key><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993.0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016s1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5s-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864.0 1.6425 1.031 1.5443 2.2492h-2.956"/></g></svg></kbd>
+<span class=flexsearch-key-label>to close</span></li></div><form class="flexsearch position-relative flex-grow-1 ms-2 me-2"><div class="d-flex flex-row"><input id=flexsearch class=form-control type=search placeholder=Search aria-label=Search autocomplete=off>
+<button id=hideFlexsearch type=button class="ms-2 btn btn-soft">
+cancel</button></div><div id=suggestions class="shadow rounded-1 d-none"></div></form></div></div></div><div class=container-fluid><div class=layout-spacing><div class="d-md-flex justify-content-between align-items-center"><nav aria-label=breadcrumb class="d-inline-block pb-2 mt-1 mt-sm-0"><ul id=breadcrumbs class="breadcrumb bg-transparent mb-0" itemscope itemtype=https://schema.org/BreadcrumbList><li class="breadcrumb-item text-capitalize active" aria-current=page itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemprop=item href=/docs/><i class="material-icons size-20 align-text-bottom" itemprop=name>Home</i>
+</a><meta itemprop=position content='1'></li><li class="breadcrumb-item text-capitalize active" itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Settings</span>
+<meta itemprop=position content='2'></li></ul></nav></div><div class="row flex-xl-nowrap"><div class="docs-toc col-xl-3 visually-hidden d-xl-block"><toc><div class="fw-bold text-uppercase mb-2">On this page</div><nav id=TableOfContents><ul><li><ul><li><a href=#app-settings>App Settings</a></li><li><a href=#data-guard>Data Guard</a></li></ul></li></ul></nav></toc></div><div class="docs-toc-mobile visually-hidden d-print-none d-xl-none"><button id=toc-dropdown-btn class="btn-secondary dropdown-toggle" type=button data-bs-toggle=dropdown data-bs-offset=0,0 aria-expanded=false>
+Table of Contents</button><nav id=toc-mobile><ul class=dropdown-menu><li><ul><li><a href=#app-settings>App Settings</a></li><li><a href=#data-guard>Data Guard</a></li></ul></li></ul></nav></div><div class="docs-content col-12 mt-0"><div class="mb-0 d-flex"><h1 class="content-title mb-0">Settings</h1></div><div id=content class=main-content><div class="row flex-xl-wrap"><div id=list-item class="col-md-4 col-12 mt-4 pt-2"><a class="text-decoration-none text-reset" href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/app-settings/><div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1"><span class="icon-color d-flex my-3"><i class="material-icons align-middle">article</i></span><div class="card-body p-0 content"><p class="fs-5 fw-semibold card-title mb-1">App Settings</p><p class="para card-text mb-0">Themes, security masking, and data management.</p></div></div></a></div><div id=list-item class="col-md-4 col-12 mt-4 pt-2"><a class="text-decoration-none text-reset" href=https://mcp-explorer-x-docs.garrardkitchen.com/docs/settings/data-guard/><div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1"><span class="icon-color d-flex my-3"><i class="material-icons align-middle">article</i></span><div class="card-body p-0 content"><p class="fs-5 fw-semibold card-title mb-1">Data Guard</p><p class="para card-text mb-0">Protect sensitive data in MCP communications with multi-layer detection and masking.</p></div></div></a></div></div></div><div><hr class=doc-hr><div id=doc-nav class=d-print-none></div></div></div></div></div></div><footer class="shadow py-3 d-print-none"><div class=container-fluid><div class="row align-items-center"><div class=col><div class="text-sm-start text-center mx-md-2"><p class=mb-0>© 2026 MCP Explorer</p></div></div></div></div></footer></main></div></div><button onclick=topFunction() id=back-to-top aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12 10.224l-6.3 6.3-1.38-1.372L12 7.472l7.68 7.68-1.38 1.376z" style="fill:#fff"/></svg></button>
+<script>(()=>{var e=document.getElementById("mode");e!==null&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{e.matches?(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")):(localStorage.setItem("theme","light"),document.documentElement.removeAttribute("data-dark-mode"))}),e.addEventListener("click",()=>{document.documentElement.toggleAttribute("data-dark-mode"),localStorage.setItem("theme",document.documentElement.hasAttribute("data-dark-mode")?"dark":"light")}),localStorage.getItem("theme")==="dark"?document.documentElement.setAttribute("data-dark-mode",""):document.documentElement.removeAttribute("data-dark-mode"))})()</script><script src=/docs/js/bootstrap.9830259bc28edf5a45a3c7aa85d782bb2b8ac9a68e8ff3e14e4ad92a0aaf7882b8c20ea2ba1c4fc65f4415a3046aca9a.js integrity=sha384-mDAlm8KO31pFo8eqhdeCuyuKyaaOj/PhTkrZKgqveIK4wg6iuhxPxl9EFaMEasqa defer></script><script type=text/javascript src=https://mcp-explorer-x-docs.garrardkitchen.com/docs/js/bundle.min.d2660797d20b206d72c7f3379f933305f8883657f17ddd1bf8ba57ccff9d8f4592be0e38e52742f5120876d4a406e1a4.js integrity=sha384-0mYHl9ILIG1yx/M3n5MzBfiINlfxfd0b+LpXzP+dj0WSvg445SdC9RIIdtSkBuGk crossorigin=anonymous defer></script><script type=module>
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
+        });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
+    });
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/docs\/settings\/app-settings\/",
+                title: "App Settings",
+                description: "Themes, security masking, and data management.",
+                content: "Overview linkThe Settings page provides global configuration for MCP Explorer — themes, sensitive data protection rules, and data import/export.\nThe Settings page groups configuration into cards: Theme, Security, and Data Management.\nThemes linkMCP Explorer ships with 10 built-in themes. Select any theme — your choice is persisted automatically.\nTheme Style Command Dark Dark, high-contrast terminal feel Command Light Clean light counterpart Nord Arctic blue palette Dracula Classic dark purple Catppuccin Mocha Warm dark with pastel accents Solarized Light Warm off-white, reduced glare GitHub Dark Familiar dark mode GitHub Light Classic GitHub light Material Dark Google Material dark Material Light Google Material light Sensitive Data Protection linkMCP Explorer detects and masks sensitive values using a combination of heuristics and configurable regex patterns.\nBuilt-in Detection linkThe following patterns are detected automatically:\nAPI keys (OpenAI, Anthropic, Azure, AWS, etc.) Bearer tokens and JWTs Passwords in JSON payloads Private key blocks Custom Patterns linkAdd your own regex rules to mask additional sensitive data specific to your environment:\nGo to Settings → Security Click Add Pattern Enter a regex pattern (e.g. sk-[a-zA-Z0-9]{48}) Optionally give it a name Click Save Data Management linkExport All Data linkExport your entire MCP Explorer dataset (connections, models, workflows, settings) to a single encrypted JSON file:\nClick Export All Data Enter an encryption passphrase Download the .json file Import Data linkRestore from an export file:\nClick Import Data Select the .json file Enter the passphrase Confirm — existing data is merged warning: Importing data merges with your existing data. It does not delete existing entries.\nVersion Info linkThe bottom of the Settings page shows:\nAPI version — the running ASP.NET Core backend version Frontend version — the Vue app build version .NET Runtime — the .NET version in use "
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/docs\/tools\/browsing-tools\/",
+                title: "Browsing \u0026 Invoking Tools",
+                description: "Find and run MCP tools with dynamic parameter forms.",
+                content: "Overview linkThe Tools page lists every tool exposed by your active MCP connections. Tools are the primary way MCP servers expose functionality — from web search to file I/O, database queries to API calls.\nSelect a connection on the left to load its tools. Each tool shows its name and description. The active tool’s parameter form opens in the right panel.\nFinding Tools link Search bar — type any keyword to filter tools by name or description in real time Connection filter — show tools from one specific server or all servers Favourites — star tools you use often; toggle “Show favourites first” to pin them to the top Invoking a Tool link Click any tool card to expand it Fill in the parameter form — fields are generated dynamically from the tool’s JSON Schema Click Run (or press Ctrl+Enter) The response appears inline below the form Parameter Types link Schema Type UI Control string Text input number / integer Number input boolean Toggle enum (≤3 values) Radio buttons enum (\u003e3 values) Dropdown object JSON editor array Multi-value input Inspecting Responses linkResponses are rendered inline in the JSON viewer with syntax highlighting and an interactive tree. You can expand/collapse nodes, copy to clipboard, and search within the response.\nThe JSON viewer renders tool responses as an interactive tree. Expand any node to drill into nested objects.\nType in the search box to highlight matching keys and values in the JSON tree.\nTool Documentation linkEvery tool has auto-generated reference documentation derived from its JSON Schema. Click the book icon (📖) in the tool header to open the docs dialog for the selected tool.\nSingle-tool docs: rendered Markdown preview with a parameter table, description, and example usage. Switch to the Markdown tab to copy the raw source.\nThe Markdown tab shows the raw source — click Copy Markdown to paste it into any wiki, README, or AI prompt.\nTo generate a combined reference for all visible tools, click the book icon in the toolbar above the tool list (next to the search bar). This produces a single document covering every currently filtered tool.\nThe bulk docs dialog generates a single Markdown reference for all visible tools — useful for sharing a server’s full API surface with teammates or feeding into an LLM.\nElicitation linkSome tools request additional input mid-execution (the MCP elicitation feature). When this happens, an inline prompt appears asking for the required value before the tool continues.\nSensitive Data Masking linkIf a tool parameter is detected as sensitive (API keys, passwords, tokens), MCP Explorer:\nMasks the value in the UI with ●●●●●●●● Shows a reveal toggle to view it temporarily Never logs or persists the raw value Retry \u0026 Reconnect linkIf a tool call fails due to a dropped connection, a Retry button appears. MCP Explorer will attempt to reconnect and re-invoke the tool automatically.\n"
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/docs\/workflows\/building-workflows\/",
+                title: "Building Workflows",
+                description: "Create and run multi-step MCP tool chain workflows.",
+                content: "Overview linkWorkflows let you chain MCP tool calls into repeatable, parameterised sequences. Define the steps once, run them on demand, track history, and even load-test your server with concurrent executions.\nThe Workflows list. Click New Workflow to create your first workflow, or Import to load one from a JSON file.\nCreating a Workflow — Step-by-Step Example linkThe walkthrough below creates an Echo and Lookup workflow that:\nPrompts for a name at runtime using the aaa_echo tool Passes the echoed value into the who_is tool to look up that person Step 1 — Name your workflow linkClick New Workflow, enter a name, then click Add Step.\nGive the workflow a clear name. You can also set a default connection to avoid selecting it every time you run.\nStep 2 — Configure Step 1 (aaa_echo) linkSelect the connection (mcp server) and enter aaa_echo as the tool name.\nStep 1 uses the mcp server connection and the aaa_echo tool.\nStep 3 — Add a Prompt at Runtime mapping linkClick Add Mapping, set the Parameter to echo, and change the Source to Prompt at Runtime. This tells the workflow to ask for the value each time it executes.\nThe echo parameter is set to Prompt at Runtime — the workflow will pop up a dialog asking for this value before executing.\nStep 4 — Configure Step 2 (who_is) linkClick Add Step, select mcp server and enter who_is as the tool. Then click Add Mapping and set fullname as the parameter with source From Previous Step.\nStep 2 uses the who_is tool to look up information.\nThe fullname parameter is mapped From Previous Step — it will automatically receive the output of aaa_echo as its input.\nStep 5 — Save and view the workflow linkClick Create. The workflow appears in the left sidebar showing its step count.\nThe saved workflow with both steps listed. Click Execute to run it.\nRunning a Workflow linkClick Execute. If any step has a Prompt at Runtime parameter, a dialog appears asking for those values before execution starts.\nThe Runtime Parameters dialog collects any values marked as “Prompt at Runtime” before the workflow begins.\nEnter the runtime value — here “Garrard Kitchen” — then click Run Workflow.\nThe execution panel shows real-time step progress and results:\nBoth steps completed ✓ in 107ms. Step 1 echoed “Garrard Kitchen” and Step 2 received that output as the fullname input — showing the full data pipeline in action.\nParameter Mapping Sources linkEach step mapping can draw its value from one of three sources:\nSource Description Manual Value A fixed static value set at design time From Previous Step The output of an earlier step (auto-selects the immediately preceding step) Prompt at Runtime User is prompted for this value each time the workflow is executed Running a Workflow linkClick Execute on the workflow detail view. For workflows with Prompt at Runtime parameters, a dialog collects the values before execution begins. The panel then shows real-time step progress, input/output per step, and total duration.\nExecution History linkEvery workflow run is saved automatically. Click History to view past runs including timestamps, duration, and per-step status.\nThe history panel lists every execution. Click any run to expand the full step-by-step input/output detail.\nYou can delete individual runs from the history with a confirmation dialog.\nImport \u0026 Export linkWorkflows can be exported to a JSON file and imported — useful for sharing workflow templates with a team or backing up your work.\nExport: Click the Export button on the workflows list Import: Click Import and select a .json file Load Testing linkFor each workflow you can run a load test — execute the workflow N times concurrently to stress-test your MCP server:\nOpen a workflow Click Load Test Set the number of concurrent runs and total iterations Click Start — results show success rate, average duration, and errors Workflow Tips link Use workflows to automate repetitive MCP exploration tasks Combine a search tool with a summarisation prompt for quick research pipelines Use load testing to find throughput limits before deploying to production "
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/docs\/chat\/chat-overview\/",
+                title: "Chat Overview",
+                description: "Streaming AI chat with MCP tool calling.",
+                content: "Overview linkThe Chat view gives you a streaming conversation interface backed by any LLM you’ve configured. What makes it powerful is automatic MCP tool calling — the LLM can invoke any tool from your active connections mid-conversation, and MCP Explorer handles the round-trip transparently.\nStarting a Chat link Click New Session in the left sidebar to create a fresh conversation Select which Connections to make available for tool calling from the multiselect dropdown Choose your Model (defaults to GPT-4o) Type your message and press Ctrl+Enter or click the Send button A new chat session with the mcp server connection selected. The connection badge appears next to the model selector, confirming the LLM has access to all MCP tools from that server.\nSending a Message linkType your message in the input box at the bottom of the chat area. Responses stream in real time — you see tokens appearing as the model generates them. Token usage (input ↑ / output ↓) is shown under each assistant response.\n“who is garrard?” ready to send. Press Ctrl+Enter to submit.\nGPT-4o’s streamed response to “who is garrard?”. Notice the 🔧 Calling tool: who_is badge — the model automatically invoked an MCP tool mid-conversation to answer the question. Thinking time (🤔 2.5s) and token cost (💰 1158↑ 14↓) are shown beneath the message.\nSlash Commands linkType / in the message input to open the command palette. All available commands appear with descriptions — navigate with ↑↓ arrow keys, press Enter to select, or Esc to dismiss.\nTyping / reveals the full command palette with categories for MCP Prompts and Chat Controls.\nAfter pressing Enter on /prompt, the Prompt Picker dialog opens. Select any MCP prompt from the connected server, fill in its arguments, then click Run in Chat to inject it directly into the conversation.\nCommand Description /prompt Browse \u0026 inject an MCP prompt template from connected servers /stats Show token usage: input / output / total for this session /report Copy entire conversation as formatted Markdown to clipboard /system Open the system prompt editor for the active model /model Quick-switch the active AI model /clear Clear all messages in the current session Tool Calling linkWhen the LLM decides to use a tool, MCP Explorer:\nShows an active tool badge indicating which tool is running Sends the tool call to the appropriate MCP server Returns the result to the LLM to continue its response Tool call details (inputs and outputs) are shown inline in the message stream — fully expandable.\nToken Usage linkEach LLM response shows a token usage summary:\nPrompt tokens — input sent to the model Completion tokens — tokens in the response Total — combined Conversation Management link New Chat — start a fresh conversation (retains model and connection selection) Clear — clear messages without changing settings Chat history is persisted per session Sensitive Data in Chat linkMCP Explorer detects and masks sensitive data (API keys, passwords, secrets) in:\nYour messages before they’re sent Tool response content before display Masked values are shown as ●●●●●●●● with a reveal toggle.\n"
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/docs\/models\/configuring-models\/",
+                title: "Configuring Models",
+                description: "Add LLM providers and models for use in Chat.",
+                content: "Overview linkThe Models page is where you configure the LLMs that power the Chat view. MCP Explorer supports any OpenAI-compatible API endpoint.\nThe AI Models page lists all configured LLMs. Each entry shows its friendly name, provider badge (e.g. AzureAIFoundry), model ID, endpoint URL, and masked API key. The default model is highlighted — it is pre-selected in the Send to LLM picker.\nSupported Providers link Provider Transport Notes OpenAI HTTPS GPT-4o, GPT-4, GPT-3.5 Azure OpenAI HTTPS Requires deployment name + API version Azure AI Foundry HTTPS Supports Phi, Llama, Mistral, and other hosted models Ollama HTTP (local) Any locally running model LM Studio HTTP (local) OpenAI-compatible endpoint Any OpenAI-compatible API HTTPS/HTTP Custom base URL Adding a Model link Click Add Model Select the Provider from the dropdown Fill in: Name — a friendly display name (editable after saving) Base URL — the API endpoint API Key — click the 👁 eye icon to reveal / hide Model ID — the model identifier (e.g. gpt-4o, llama3.2) Deployment name (Azure only) API Version (Azure only) Click Save Editing a Model linkClick the pencil icon on any model row. All fields are editable including the name. The provider dropdown updates the form to show the relevant fields.\nShow / Hide API Keys linkAPI key fields have an eye icon (👁) toggle. Click it to reveal the key temporarily — useful when verifying you’ve entered the correct value.\nDeleting a Model linkClick the trash icon and confirm. Any Chat sessions using this model will lose their model selection.\nSelecting a Model in Chat linkOnce configured, models appear in the Model dropdown in the Chat view. Select any model to use it for the current conversation.\nAzure AI Foundry linkWhen selecting Azure AI Foundry as the provider, additional fields appear:\nEndpoint URL — your Foundry project endpoint (e.g. https://your-project.services.ai.azure.com) Deployment Name — the model deployment name in your Foundry project API Key — your Azure AI Foundry API key info: Ensure your Foundry deployment is active before connecting from Chat.\n"
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/docs\/",
+                title: "Documentation",
+                description: "Everything you need to know about MCP Explorer.",
+                content: "Welcome to the MCP Explorer documentation. Use the sections below to find what you need.\n"
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/docs\/getting-started\/",
+                title: "Getting Started",
+                description: "Install and run MCP Explorer in minutes.",
+                content: "Get up and running with MCP Explorer using Docker — no build tools required.\n"
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
+                href: "\/docs\/reference\/keyboard-shortcuts\/",
+                title: "Keyboard Shortcuts",
+                description: "Keyboard shortcuts and command palette reference.",
+                content: "Command Palette linkPress ⌘K (macOS) or Ctrl+K (Windows/Linux) from anywhere in the app to open the command palette.\nThe command palette provides instant keyboard-first navigation to any page or action. Type to fuzzy-search.\nType to fuzzy-search and press Enter to navigate. Press Esc to close.\nGlobal Shortcuts link Shortcut Action ⌘K / Ctrl+K Open command palette Esc Close dialogs / command palette Chat Shortcuts link Shortcut Action Enter Send message Shift+Enter Insert newline / (at start of input) Open slash commands Ctrl+Enter Send (alternate) Slash Commands (Chat) linkType / in the chat input to access:\nCommand Description /clear Clear the current conversation /prompt Browse and insert an MCP prompt /help Show all available slash commands Tool Invocation link Shortcut Action Ctrl+Enter Run tool / execute prompt Navigation link Shortcut Action ⌘K / Ctrl+K Jump to any page "
+            }
+        );
+    index.add(
+            {
+                id:  8 ,
+                href: "\/docs\/connections\/managing-connections\/",
+                title: "Managing Connections",
+                description: "Create, edit, delete, and organise MCP server connections.",
+                content: "Overview linkThe Connections page is your hub for all MCP server connections. From here you can add new servers, edit existing ones, group them logically, and connect or disconnect at any time.\nThe Connections page lists all saved MCP servers with live health indicators, transport type, and connection toggles. Use the toolbar to add, import, or export connections.\nCreating a Connection link Click New Connection in the top-right corner Fill in the connection form: The connection form supports stdio, SSE, and HTTP transports, with optional custom headers and OAuth/Azure credentials.\nField Required Description Name ✅ A friendly display name Endpoint URL ✅ The MCP server URL (for SSE/HTTP) or command (for stdio) Transport ✅ stdio, sse, or http Group ❌ Assign to a named group for organisation Description ❌ Free-text notes Headers ❌ Custom HTTP headers (e.g. Authorization: Bearer ...) Click Save — the connection appears in the list immediately. Connecting \u0026 Disconnecting linkClick the toggle next to any connection to connect or disconnect. The sidebar shows an active connections badge with a live count.\nEditing a Connection linkClick the pencil icon on any connection row to edit all fields including the name, URL, transport, and headers.\nDeleting a Connection linkClick the trash icon and confirm the deletion dialog. This is permanent.\nGrouping Connections linkAssign connections to named groups to keep your list organised. Groups appear as collapsible sections in the connections list. Useful when working with many servers across different projects.\nImport \u0026 Export linkYou can export all your connections to an encrypted JSON file and import them on another machine or share with a team.\nExport: Click Export Connections in the top toolbar → enter an encryption passphrase → download the .json file Import: Click Import Connections → select the file → enter the passphrase → connections are merged info: The export file is AES-256 encrypted. Without the passphrase it cannot be read.\nConnection Health linkEach connection row shows a live health indicator:\n🟢 Connected — server is live and responding 🔴 Disconnected — not connected 🟡 Error — connection attempt failed (hover for the error message) "
+            }
+        );
+    index.add(
+            {
+                id:  9 ,
+                href: "\/docs\/getting-started\/quickstart\/",
+                title: "Quick Start",
+                description: "Run MCP Explorer with Docker in under 2 minutes.",
+                content: "Prerequisites link Docker 20.10+ installed and running A terminal / command prompt Option 1 — Single Container (docker run) linkThe fastest way to get started. One command, one container.\ndocker run -d \\ --name mcp-explorer \\ -p 8090:8080 \\ -v mcp-explorer-data:/app/data \\ ghcr.io/your-username/mcp-explorer-x:latest Then open http://localhost:8090 in your browser.\nFlag Purpose -p 8090:8080 Map container port 8080 → host port 8090 -v mcp-explorer-data:/app/data Persist connections and settings across restarts Option 2 — Docker Compose linkBetter for long-running or team environments. Supports separate frontend and backend services.\n1. Download the compose file:\ncurl -o docker-compose.yml \\ https://raw.githubusercontent.com/your-username/mcp-explorer-x/main/docker-compose.yml 2. Create a .env file (optional but recommended):\n# .env MCP_CLIENT_NAME=my-team-explorer 3. Start the services:\ndocker compose up -d Open http://localhost:8090 in your browser.\nVerify It’s Running linkYou should see the Connections page — MCP Explorer’s home screen.\nThe Connections page is shown on startup. It lists all your saved MCP server connections.\nNext Steps link Add your first connection — connect to an MCP server Explore Tools — browse and invoke MCP tools Start chatting — use an LLM with MCP tool calling "
+            }
+        );
+    index.add(
+            {
+                id:  10 ,
+                href: "\/docs\/elicitations\/using-elicitations\/",
+                title: "Using Elicitations",
+                description: "Respond to MCP tool elicitations with inline input dialogs.",
+                content: "What are Elicitations? linkSome MCP tools need additional user input mid-execution — for example, asking which of several options to proceed with, or requesting a confirmation before a destructive operation. This is the MCP elicitation feature.\nMCP Explorer surfaces these requests as inline dialogs that pause the tool execution and wait for your response.\nHow Elicitations Work linksequenceDiagram participant U as User participant App as MCP Explorer participant T as MCP Tool U-\u003e\u003eApp: Invoke tool App-\u003e\u003eT: Tool call T--\u003e\u003eApp: Elicitation request (needs input) App--\u003e\u003eU: Show inline input dialog U-\u003e\u003eApp: Provide response App-\u003e\u003eT: Continue with user input T--\u003e\u003eApp: Tool result App--\u003e\u003eU: Display result Responding to an Elicitation linkWhen a tool makes an elicitation request, an inline prompt appears within the tool card:\nRead the prompt — the tool explains what input it needs The guess_the_number tool asks for a range, a title, a date, and multi-select options — all in one elicitation form.\nFill in the form — the form type depends on what the tool requests: Input Type UI Control When Used Short text Text input Single-line string Long text Textarea Multi-line content Yes/No Toggle / radio Boolean confirmation One of few options (≤3) Radio buttons Small enum choice One of many options (\u003e3) Dropdown Large enum list Multiple selections Multi-select Array of choices Fill in all the form fields — radio buttons, text inputs, date pickers, and multi-select checkboxes are all supported.\nClick Accept to continue the tool — or Decline to cancel the elicitation After the first response, the tool may make a second elicitation request — here asking for the actual numeric guess.\nEnter the value and click Accept to submit.\nThe tool receives your input and continues execution The final tool result appears after all elicitation steps are complete.\nDeclining an Elicitation linkClick Decline to reject the elicitation. The tool will receive a declined response and may abort or continue with a default value, depending on how it’s implemented.\nElicitation History linkThe Elicitations page shows all past elicitation requests across sessions:\nThe tool that requested it The prompt text Your response (or “Declined”) Timestamp This is useful for auditing what data you’ve provided to tools.\nTips link Elicitations are tool-server-defined — the prompt text and available options come from the MCP server If a tool frequently elicits the same input, consider whether it supports default parameter values that could skip the elicitation "
+            }
+        );
+    index.add(
+            {
+                id:  11 ,
+                href: "\/docs\/prompts\/using-prompts\/",
+                title: "Using Prompts",
+                description: "Execute MCP prompts and pipe results to an LLM.",
+                content: "Overview linkMCP Prompts are parameterised message templates that MCP servers expose. They let you capture common workflows — code review patterns, data analysis templates, document generators — and invoke them with a few inputs.\nSelect a connection to load its prompts. Each prompt shows its name, description, and argument count.\nExecuting a Prompt link Click a prompt to open its detail panel Fill in any required arguments Each prompt argument has a label, description, and validation indicator. Fill in the values and click Execute.\nClick Execute — the rendered MCP messages appear as JSON in the result panel After execution, the result is displayed inline. The Send to LLM button appears in the result toolbar — click it to pipe the prompt messages directly to your configured LLM.\nClick Send to LLM — a model picker popover appears Choose a model from the dropdown (your configured LLM providers are listed here — GPT-4o is the default) and click Send to stream the response.\nThe LLM Response tab activates with the streamed result The LLM Response tab shows the streamed reply from GPT-4o. Results are rendered as Markdown with syntax highlighting.\nPrompt Arguments linkArguments are generated dynamically from the prompt’s schema. Each field shows:\nA label and description (from the server schema) Validation (required vs optional) Inline error messages Document Generation linkThe summary_benefits_and_references prompt demonstrates the document generation capability — it produces a full Markdown document with a summary, key benefits, and references for any topic.\nThe document prompt generates structured Markdown with a summary paragraph, benefit bullets, and reference list — ready to copy or pipe to an LLM.\nFavourites linkStar any prompt to mark it as a favourite. Toggle Show favourites first in the toolbar to pin starred prompts to the top of the list. This preference is persisted across sessions.\nMarkdown Rendering linkPrompt output is rendered as Markdown, including:\nCode blocks with syntax highlighting Tables Inline formatting Send to Chat linkAfter executing a prompt, the Send to Chat button opens the Chat view with the prompt result pre-loaded as the conversation context — letting you continue the interaction with any configured LLM.\n"
+            }
+        );
+    index.add(
+            {
+                id:  12 ,
+                href: "\/docs\/templates\/using-templates\/",
+                title: "Using Resource Templates",
+                description: "Expand MCP URI templates with runtime parameters to fetch dynamic resources.",
+                content: "What are Resource Templates? linkResource Templates are URI patterns that MCP servers expose with placeholders — for example file:///{path}, db:///{table}/{id}, or api:///{endpoint}?query={q}. By filling in the placeholders, you resolve the template to a concrete URI and fetch the corresponding resource.\nThey’re distinct from static Resources in that they’re dynamic — the same template can produce unlimited concrete resources.\nFinding Templates linkThe Resource Templates tab is accessible from the Resources page (tab switcher at the top). Templates are listed with:\nThe URI pattern (e.g. file:///{path}) A description from the MCP server The server it belongs to Use the search bar to filter templates by name or URI pattern.\nExpanding a Template link Click a template card to expand it Fill in the placeholder fields — each {placeholder} in the URI becomes a form field Click Expand to resolve the URI The resolved resource content is fetched and displayed inline Example linkTemplate: db:///{table}/{id}\nField Value table users id 42 Resolves to → db:///users/42 → fetches user record #42\nFavourites linkStar templates you use frequently. Toggle Show favourites first to pin starred templates to the top of the list. This preference persists across sessions.\nTemplate vs Resource link Resource Resource Template URI Fixed Parameterised pattern Fetch Direct Expand → fetch Use case Static files, config Dynamic records, queries Count Finite list Unlimited combinations "
+            }
+        );
+    index.add(
+            {
+                id:  13 ,
+                href: "\/docs\/reference\/architecture\/",
+                title: "Architecture",
+                description: "MCP Explorer architecture and deployment modes.",
+                content: "Architecture Overview linkMCP Explorer follows a clean architecture pattern with a Vue 3 SPA frontend and an ASP.NET Core backend.\nflowchart TB subgraph BROWSER[\"🌐 Browser\"] SPA[\"⚡ Vue 3 · Vite · PrimeVue 4\\nSingle-Page Application\"] end subgraph SINGLE[\"🐳 Single Container (docker run)\"] GW[\"🔀 YARP Gateway :8080\\nStatic SPA host + /api/** proxy\"] API[\"⚙️ ASP.NET Core API :5000\"] GW --\u003e|reverse proxy| API end subgraph DATA[\"💾 Persistent Data\"] FILE[\"/app/data/data.json\\nConnections · Models · Workflows\\nSettings · Chat History\"] end subgraph MCP[\"🔌 MCP Servers\"] S1[\"Server A (stdio)\"] S2[\"Server B (SSE)\"] S3[\"Server C (HTTP)\"] end BROWSER --\u003e|HTTP/SSE| GW API --\u003e|read/write| FILE API --\u003e|MCP protocol| S1 API --\u003e|MCP protocol| S2 API --\u003e|MCP protocol| S3 Deployment Modes linkSingle Container linkThe default deployment — everything in one image.\ndocker run -d \\ -p 8090:8080 \\ -v mcp-explorer-data:/app/data \\ ghcr.io/your-username/mcp-explorer-x:latest flowchart LR Browser --\u003e|\":8090\"| Container[\"Single Container\\nYARP + API + SPA\"] Container --\u003e|\"/app/data\"| Volume[\"Named Volume\"] Container --\u003e|\"MCP protocol\"| MCP[\"MCP Servers\"] Docker Compose (Separate Services) linkFor teams or when you want independent scaling of frontend and backend.\ndocker compose up -d flowchart LR Browser --\u003e|\":8090\"| FE[\"Frontend Container\\nNginx + Vite SPA\"] FE --\u003e|\"/api/**\"| BE[\"Backend Container\\nASP.NET Core API :5000\"] BE --\u003e|\"/app/data\"| Volume[\"Named Volume\"] BE --\u003e|\"MCP protocol\"| MCP[\"MCP Servers\"] Data Flow linksequenceDiagram participant U as User participant SPA as Vue SPA participant API as ASP.NET Core API participant MCP as MCP Server participant DB as data.json U-\u003e\u003eSPA: Open app SPA-\u003e\u003eAPI: GET /api/connections API-\u003e\u003eDB: Read connections DB--\u003e\u003eAPI: Connection list API--\u003e\u003eSPA: JSON response SPA--\u003e\u003eU: Render connections U-\u003e\u003eSPA: Invoke tool SPA-\u003e\u003eAPI: POST /api/tools/invoke API-\u003e\u003eMCP: Tool call (MCP protocol) MCP--\u003e\u003eAPI: Tool result API--\u003e\u003eSPA: SSE stream SPA--\u003e\u003eU: Render response Technology Stack link Layer Technology Frontend Vue 3, Vite, PrimeVue 4, TypeScript Backend ASP.NET Core 9, C# MCP SDK ModelContextProtocol 1.2.0 Gateway YARP reverse proxy Persistence JSON file (single file, no database) Container Docker, multi-stage build "
+            }
+        );
+    index.add(
+            {
+                id:  14 ,
+                href: "\/docs\/getting-started\/configuration\/",
+                title: "Configuration",
+                description: "Environment variables and persistent data configuration.",
+                content: "Environment Variables linkMCP Explorer is configured via environment variables. When using Docker Compose, place these in a .env file alongside docker-compose.yml.\nVariable Default Description MCP_CLIENT_NAME mcp-explorer Name sent in the User-Agent header and MCP ClientInfo when connecting to MCP servers ASPNETCORE_ENVIRONMENT Production Set to Development for verbose logging Example .env link # .env MCP_CLIENT_NAME=acme-mcp-explorer Persistent Data linkMCP Explorer stores all state — connections, models, workflows, chat history, and settings — in a single JSON file at /app/data/data.json inside the container.\nAlways mount a volume to avoid losing data on container restart:\n# docker run -v mcp-explorer-data:/app/data # docker-compose.yml volumes: - mcp-explorer-data:/app/data User-Agent Header linkWhen MCP Explorer connects to an MCP server over HTTP/SSE, it sends:\nUser-Agent: / () For example:\nUser-Agent: mcp-explorer/1.0.0 (my-laptop.local) This helps MCP server operators identify requests from MCP Explorer in their logs.\nPort Mapping linkThe default port inside the container is 8080. Map it to any host port you prefer:\n# Use port 3000 on the host docker run -p 3000:8080 ghcr.io/your-username/mcp-explorer-x:latest "
+            }
+        );
+    index.add(
+            {
+                id:  15 ,
+                href: "\/docs\/connections\/",
+                title: "Connections",
+                description: "Manage MCP server connections.",
+                content: "Connections are the foundation of MCP Explorer — each connection links to a live MCP server.\n"
+            }
+        );
+    index.add(
+            {
+                id:  16 ,
+                href: "\/docs\/settings\/data-guard\/",
+                title: "Data Guard",
+                description: "Protect sensitive data in MCP communications with multi-layer detection and masking.",
+                content: "Overview linkData Guard is MCP Explorer’s built-in sensitive data protection layer. It intercepts all MCP communications — tool inputs, tool outputs, prompt content, and chat messages — and automatically detects, masks, and protects sensitive values before they appear in the UI or are stored.\nDetection uses three complementary engines that run in combination:\nEngine Always on? Description Regex patterns ✅ Yes Detects common secret formats: API keys, bearer tokens, passwords, connection strings Heuristic scanning ✅ Yes Flags high-entropy alphanumeric tokens that look like secrets AI detection ⚙️ Optional Uses an LLM to analyse values in context — catches secrets that evade pattern matching Detected values are masked as ●●●●●●●● in the UI with a reveal toggle, and are encrypted at rest.\nThe Data Guard configuration page. Regex and heuristic detection are always active — AI detection and custom patterns are optional add-ons.\nDetection Modes linkRegex \u0026 Heuristic Detection linkAlways active. No configuration required. Covers:\nAPI keys (sk-..., Bearer ..., AIza..., etc.) Passwords in key=value pairs Connection strings containing credentials High-entropy tokens (random-looking alphanumeric strings above a length threshold) AI-Powered Detection linkEnable AI-Powered Detection to add a context-aware layer on top of pattern matching. The LLM analyses each value in the context of its field name and surrounding data — catching secrets that have non-standard formats or names.\nNote: AI detection adds latency to every MCP response. Enable it when you need maximum coverage and can tolerate a small delay.\nEnabling AI detection reveals the Strictness selector. Choose the level that balances coverage against false positives for your use case.\nWhen AI detection is on, choose a strictness level:\nLevel Behaviour Conservative Only flag obvious secrets — API keys, passwords with clear labels. Lowest false-positive rate. Balanced Standard detection — good balance of precision and recall. Recommended default. Aggressive Maximum sensitivity. May flag some non-secret values. Use when data leakage risk is highest. Additional Sensitive Fields linkAdd custom field names or regex patterns that should always be treated as sensitive, regardless of value. Useful for domain-specific fields your organisation uses (e.g. employeeId, nationalInsuranceNumber).\nAccepted formats:\nPlain field name: creditCardNumber Regex pattern: /\\btoken_\\w+/i Type the value and press Enter or click Add. Each entry appears as a removable tag.\nAllowed Fields (Bypass Detection) linkWhitelist specific field names that should never be flagged, even if their values match detection rules. Useful for fields that look like secrets but are not — e.g. publicKey, exampleToken.\nDebug Logging linkEnable Debug Logging to write detection decisions to the browser console. Each masked value logs which engine detected it and why. Useful when tuning custom patterns or diagnosing false positives.\nHow Masking Works link A tool result or chat message arrives from an MCP server Each field value passes through regex → heuristic → (optionally) AI detection Any flagged value is replaced with ●●●●●●●● in the rendered UI A 👁 reveal toggle lets you temporarily unmask values for inspection Masked values are stored encrypted — they are never written as plaintext This pipeline applies to:\nTool call inputs (your parameters) Tool call outputs (server responses) Prompt template arguments Chat messages and responses "
+            }
+        );
+    index.add(
+            {
+                id:  17 ,
+                href: "\/docs\/reference\/environment-variables\/",
+                title: "Environment Variables",
+                description: "Complete reference for all environment variables supported by MCP Explorer.",
+                content: "Overview linkMCP Explorer is configured entirely via environment variables — there are no required config files to edit. Copy .env.example to .env, fill in your values, and pass it to Docker or Docker Compose.\n# Docker Compose (reads .env automatically) cp .env.example .env docker compose up -d # docker run (pass vars individually) docker run -p 8090:8080 \\ -e MCP_CLIENT_NAME=my-app \\ -e MCP_DATA_PATH=/data \\ -v /path/to/data:/data \\ ghcr.io/your-org/mcp-explorer:latest info: In Docker Compose, variables in .env are interpolated into docker-compose.yml automatically. Variables prefixed VITE_ are build-time only — they are baked into the static JS bundle and cannot be changed at runtime.\nAPI Container Variables linkThese apply to the api service (Garrard.Mcp.Explorer.Api).\nASP.NET Core link Variable Default Description ASPNETCORE_ENVIRONMENT Production Runtime environment. Development enables detailed error pages and Swagger UI. Production suppresses stack traces. ASPNETCORE_URLS http://+:5000 The URL(s) the API listens on inside the container. Do not change unless you also remap the internal port. App Metadata link Variable Default Description AppMetadata__Version 0.5.0 Version string returned by GET /api/v1/info and displayed in the UI footer. Set this to match your release tag. MCP Client link Variable Default Description MCP_CLIENT_NAME mcp-explorer Client name sent to MCP servers during the protocol handshake. Also included in the User-Agent header as :/. Override to brand requests from your instance. Preferences / Storage link Variable Default Description MCP_DATA_PATH (docker volume) Host directory to mount as the data volume. Set this to your existing McpExplorer data directory to reuse saved connections and settings. When empty, Docker Compose creates a named volume called mcp-data. PREFERENCES__StoragePath /data/settings.json Absolute path to settings.json inside the container. Only change this if you customise the volume mount target. Default data directory locations on the host (for MCP_DATA_PATH):\nPlatform Path macOS /Users//Library/Application Support/McpExplorer Linux /home//.local/share/McpExplorer Windows C:\\Users\\\\AppData\\Local\\McpExplorer LLM Service link Variable Default Description LlmService__OpenAiBaseUrl https://api.openai.com/v1 Base URL for OpenAI-compatible APIs. Override to point at Azure OpenAI, a local proxy (e.g. Ollama, LM Studio), or any OpenAI-compatible endpoint. LlmService__AzureApiVersion 2024-02-15-preview Azure OpenAI REST API version appended as ?api-version=. Only relevant when using Azure OpenAI endpoints. LlmService__MaxRetryAttempts 3 Maximum automatic retries for a failed LLM API request. LlmService__TimeoutSeconds 30 Seconds to wait for an LLM response before timing out. Increase for large context windows or slow providers. Tool Invocation link Variable Default Description ToolInvoke__TimeoutSeconds 300 Seconds to wait for a single MCP tool call to complete. Increase for slow or long-running tools. Set to 0 to disable the timeout entirely. ToolInvoke__MaxRetryAttempts 2 Maximum automatic retries when a tool call fails due to a dropped MCP connection. Elicitation link Variable Default Description Elicitation__TimeoutSeconds 0 Seconds to wait for a user to respond to an elicitation dialog. 0 = wait indefinitely (recommended for interactive use). Set a positive integer to auto-decline after the timeout. Gateway / Frontend Container Variables linkThese apply to the frontend service (Garrard.Mcp.Explorer.Gateway) and control how the gateway routes traffic and what port is exposed.\nPort Mapping link Variable Default Description GATEWAY_PORT 8090 Host port the gateway is exposed on. Access the app at http://localhost:. Maps to container port 8080. YARP Reverse Proxy link Variable Default Description ReverseProxy__Clusters__api-cluster__Destinations__api__Address http://localhost:5000/ The upstream address YARP uses to forward /api/* and /oauth/* requests. In single-container mode this points to localhost:5000. In docker compose it is overridden to http://api:5000/ so the gateway reaches the api service over the internal Docker network. Frontend Build-Time Variables (VITE_*) link warning: These variables are baked into the static JS bundle at build time. They cannot be changed after the image is built. If you need different values, rebuild the image.\nVariable Default Description VITE_API_BASE_URL (empty) Base URL the browser uses to reach the API. Empty string means same-origin — requests go through the gateway (recommended). Override only when the API is on a different origin, e.g. http://localhost:5000. VITE_APP_VERSION 0.5.0 App version displayed in the UI footer. Read-Only / Implicit Variables linkThese are set automatically by the .NET runtime or Docker base images and are documented here for completeness.\nVariable Set By Description DOTNET_RUNNING_IN_CONTAINER .NET base image Set to true by all official Microsoft .NET Docker images. MCP Explorer uses this to resolve localhost MCP server URLs to host.docker.internal automatically, so connections to your host machine work without any manual configuration. Quick Reference link # Minimal docker run (single container) docker run -p 8090:8080 \\ -v mcp-data:/data \\ ghcr.io/your-org/mcp-explorer:latest # With custom client name and existing settings docker run -p 8090:8080 \\ -e MCP_CLIENT_NAME=my-team \\ -e MCP_DATA_PATH=/Users/me/Library/Application\\ Support/McpExplorer \\ -v \"/Users/me/Library/Application Support/McpExplorer\":/data \\ ghcr.io/your-org/mcp-explorer:latest # docker compose — copy .env.example to .env, edit, then: docker compose up -d "
+            }
+        );
+    index.add(
+            {
+                id:  18 ,
+                href: "\/docs\/tools\/",
+                title: "Tools",
+                description: "Browse and invoke MCP tools.",
+                content: "Browse, search, and invoke any tool exposed by your connected MCP servers.\n"
+            }
+        );
+    index.add(
+            {
+                id:  19 ,
+                href: "\/docs\/prompts\/",
+                title: "Prompts",
+                description: "List, execute, and pipe MCP prompts to an LLM.",
+                content: "Browse and execute MCP prompts — pre-built message templates exposed by your MCP servers.\n"
+            }
+        );
+    index.add(
+            {
+                id:  20 ,
+                href: "\/docs\/chat\/",
+                title: "Chat",
+                description: "SSE-streamed AI chat with automatic MCP tool calling.",
+                content: "Chat with any configured LLM with full MCP tool calling, streaming responses, and conversation management.\n"
+            }
+        );
+    index.add(
+            {
+                id:  21 ,
+                href: "\/docs\/templates\/",
+                title: "Resource Templates",
+                description: "Expand parameterised URI templates to fetch dynamic MCP resources.",
+                content: "Resource Templates are URI patterns with placeholders — expand them with runtime values to fetch dynamic MCP resources.\n"
+            }
+        );
+    index.add(
+            {
+                id:  22 ,
+                href: "\/docs\/workflows\/",
+                title: "Workflows",
+                description: "Build and run multi-step MCP tool chains.",
+                content: "Chain MCP tools together into reusable, executable workflows with history tracking and load testing.\n"
+            }
+        );
+    index.add(
+            {
+                id:  23 ,
+                href: "\/docs\/models\/",
+                title: "Models",
+                description: "Configure LLM providers for use in Chat.",
+                content: "Add and manage LLM model configurations for use in the Chat view.\n"
+            }
+        );
+    index.add(
+            {
+                id:  24 ,
+                href: "\/docs\/settings\/",
+                title: "Settings",
+                description: "App-wide settings including themes, security, and data management.",
+                content: "Configure app-wide preferences, themes, security options, and data protection.\nApp Settings linkThemes, display preferences, and general application configuration.\nData Guard linkMulti-layer sensitive data detection and masking for all MCP communications.\n"
+            }
+        );
+    index.add(
+            {
+                id:  25 ,
+                href: "\/docs\/reference\/",
+                title: "Reference",
+                description: "Keyboard shortcuts, environment variables, architecture, and configuration reference.",
+                content: "Quick reference for power users and operators.\n"
+            }
+        );
+    index.add(
+            {
+                id:  26 ,
+                href: "\/docs\/elicitations\/",
+                title: "Elicitations",
+                description: "Respond to mid-execution input requests from MCP tools.",
+                content: "Some MCP tools pause mid-execution to request additional input. MCP Explorer surfaces these as inline dialogs.\n"
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
+
+        
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
+        
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script></body></html>

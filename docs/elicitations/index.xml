@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elicitations on MCP Explorer</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/elicitations/</link><description>Recent content in Elicitations on MCP Explorer</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mcp-explorer-x-docs.garrardkitchen.com/docs/elicitations/index.xml" rel="self" type="application/rss+xml"/><item><title>Using Elicitations</title><link>https://mcp-explorer-x-docs.garrardkitchen.com/docs/elicitations/using-elicitations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mcp-explorer-x-docs.garrardkitchen.com/docs/elicitations/using-elicitations/</guid><description>&lt;h2 id="what-are-elicitations"&gt;What are Elicitations? &lt;a href="#what-are-elicitations" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Some MCP tools need additional user input mid-execution — for example, asking which of several options to proceed with, or requesting a confirmation before a destructive operation. This is the MCP &lt;em&gt;elicitation&lt;/em&gt; feature.&lt;/p&gt;
+&lt;p&gt;MCP Explorer surfaces these requests as &lt;strong&gt;inline dialogs&lt;/strong&gt; that pause the tool execution and wait for your response.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="how-elicitations-work"&gt;How Elicitations Work &lt;a href="#how-elicitations-work" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;pre class="mermaid"&gt;sequenceDiagram
+ participant U as User
+ participant App as MCP Explorer
+ participant T as MCP Tool
+
+ U-&amp;gt;&amp;gt;App: Invoke tool
+ App-&amp;gt;&amp;gt;T: Tool call
+ T--&amp;gt;&amp;gt;App: Elicitation request (needs input)
+ App--&amp;gt;&amp;gt;U: Show inline input dialog
+ U-&amp;gt;&amp;gt;App: Provide response
+ App-&amp;gt;&amp;gt;T: Continue with user input
+ T--&amp;gt;&amp;gt;App: Tool result
+ App--&amp;gt;&amp;gt;U: Display result
+&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id="responding-to-an-elicitation"&gt;Responding to an Elicitation &lt;a href="#responding-to-an-elicitation" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;When a tool makes an elicitation request, an inline prompt appears within the tool card:&lt;/p&gt;</description></item></channel></rss>
