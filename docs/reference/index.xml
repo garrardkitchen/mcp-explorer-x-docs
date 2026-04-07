@@ -76,13 +76,13 @@
  FILE[&amp;#34;/app/data/data.json\nConnections · Models · Workflows\nSettings · Chat History&amp;#34;]
  end
 
- subgraph MCP[&amp;#34;🔌 MCP Servers&amp;#34;]
- S1[&amp;#34;Server A (stdio)&amp;#34;]
- S2[&amp;#34;Server B (SSE)&amp;#34;]
- S3[&amp;#34;Server C (HTTP)&amp;#34;]
+ subgraph MCP[&amp;#34;🔌 MCP Servers (Streamable HTTP)&amp;#34;]
+ S1[&amp;#34;Server A&amp;#34;]
+ S2[&amp;#34;Server B&amp;#34;]
+ S3[&amp;#34;Server C&amp;#34;]
  end
 
- BROWSER --&amp;gt;|HTTP/SSE| GW
+ BROWSER --&amp;gt;|REST &amp;#43; SSE| GW
  API --&amp;gt;|read/write| FILE
  API --&amp;gt;|MCP protocol| S1
  API --&amp;gt;|MCP protocol| S2
